@@ -1,0 +1,14 @@
+ $font-style: normal;
+ $text-decoration: underline;
+ $padding: 2%;
+
+ h1{
+  font-style: $font-style;
+  text-decoration: $text-decoration;
+  padding:$padding;
+}
+
+.margen{
+  padding: $padding;
+  margin: $padding;
+}

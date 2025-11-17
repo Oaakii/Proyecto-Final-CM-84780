@@ -1,0 +1,113 @@
+h1 {
+  font-style: normal;
+  text-decoration: underline;
+  padding: 2%;
+}
+
+.margen {
+  padding: 2%;
+  margin: 2%;
+}
+
+/*# sourceMappingURL=style.css.map */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  padding: 2%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0; 
+  background-image: url(Img/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+nav ul {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex; 
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav li {
+  margin: 0 10px; 
+}
+
+nav a {
+  font-style: italic;
+  text-decoration: none; 
+  color: #0c0a0a; 
+  padding: 10px 15px; 
+}
+
+
+h2{
+  padding: 3%;
+  margin: auto;
+  font-style:oblique;
+  color:#423d3d;
+}
+
+p{
+  padding: 2%;
+  font: 20px medium italic;
+
+}
+
+.alinear{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .imagenes{
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  padding: 5%;
+  margin: 5%;
+  width: auto;
+  border-style:  double none none solid ;
+}
+
+
+.servicios{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:2%;
+  margin:2%;
+  font: 20px normal italic;
+  text-decoration: underline;
+ 
+}
+
+.ulservicios{
+  padding: 3%;
+  margin: 4%;
+
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin: 2%;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
