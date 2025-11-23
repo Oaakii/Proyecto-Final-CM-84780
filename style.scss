@@ -1,14 +1,254 @@
+ *{
+  padding: 0;
+  margin: 0;
+}
+ 
  $font-style: normal;
  $text-decoration: underline;
  $padding: 2%;
-
- h1{
-  font-style: $font-style;
-  text-decoration: $text-decoration;
-  padding:$padding;
-}
+ $display-grid: grid;
+ $display-flex: flex;
+ $color: #333;
+ $transform: translate(10px);
 
 .margen{
   padding: $padding;
   margin: $padding;
+}
+
+
+
+body{
+  padding: $padding;
+  margin: auto;
+  display: $display-flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0; 
+  background-image: url(Img/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+nav ul {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  display: $display-flex; 
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav li {
+  margin: 0 10px; 
+}
+
+nav a {
+  font-style: italic;
+  text-decoration: none; 
+  color: #0c0a0a; 
+  padding: 10px 15px; 
+}
+
+nav a:hover{
+  color: $color;
+  transform: $transform;
+}
+
+h1{
+  font-style: $font-style;
+  text-decoration: $text-decoration;
+  padding: $padding;
+}
+
+h2{
+  padding: 3%;
+  margin: auto;
+  font-style:oblique;
+  color:#423d3d;
+}
+
+p{
+  padding: $padding;
+  font: 20px medium italic;
+
+}
+
+.alinear{
+  display: $display-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .imagenes{
+  display: $display-flex;
+  justify-content: center;
+  gap: 5%;
+  padding: 5%;
+  margin: 5%;
+  width: auto;
+  border-style:  double none none solid ;
+}
+
+
+.margen{
+  padding: $padding;
+  margin: 2%;
+}
+
+
+
+.servicios{
+  display: $display-flex;
+  justify-content: center;
+  align-items: center;
+  padding:$padding;
+  margin:2%;
+  font: 20px normal italic;
+  text-decoration: $text-decoration;
+ 
+}
+
+.ulservicios{
+  padding: 3%;
+  margin: 4%;
+
+}
+
+.contenedorform{
+  display: $display-flex;
+  justify-content: center;
+  align-items: center;
+  padding: $padding;
+  margin: 2%;
+}
+
+footer{
+  display: $display-flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+@media (max-width: 375px) {
+ 
+    nav ul {
+        display: $display-grid;
+        grid-template-columns:auto;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+    nav a:hover{
+      color: $color;
+      transform: $transform;
+    }
+
+    .contenedor,
+    .imagenes {
+        flex-direction: row;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .margen {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    nav ul {
+        gap: 30px;
+    }
+    nav a:hover{
+        color: $color;
+        transform: $transform;
+    }
+
+    .margen {
+        max-width: 1100px;
+    }
+
+    .imagenes {
+        gap: 4rem;
+    }
+
+    footer {
+        margin-top: 8%;
+    }
+}
+
+.imagenes {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.imagenes {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-width: 2px;
+}
+
+@media (max-width: 768px) {
+     nav ul {
+        display: $display-grid;
+        grid-template-columns:auto;
+        justify-content: center;
+        gap: 20px;
+    }
+    nav a:hover{
+        color: $color;
+        transform: $transform;
+    }
+
+    .imagenes {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+
+input,
+textarea,
+button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background: #333;
+    color: white;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    form.contenedor {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    form.contenedor div {
+        max-width: 600px;
+    }
 }
